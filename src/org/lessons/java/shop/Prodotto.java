@@ -1,4 +1,4 @@
-package org.lessons.java.shop;
+    package org.lessons.java.shop;
 
 import java.util.Random;
 
@@ -23,6 +23,10 @@ public class Prodotto {
         Random generator = new Random();
         int codiceRandom = generator.nextInt(10000);
         return codiceRandom;
+    }
+
+    public int getProduct(){
+        return this.productCode;
     }
 
     public String getName(){

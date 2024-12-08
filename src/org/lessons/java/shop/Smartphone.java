@@ -4,11 +4,14 @@ public class Smartphone extends Prodotto{
 
     private int imei;
     private int storage;
+    private Display display;
 
-    public Smartphone(String name, String brand, int price, int iva, int imei, int storage){
+    public Smartphone(String name, String brand, int price, int iva, int imei, int storage, Display display){
         super(name, brand, price, iva);
         this.imei = imei;
         this.storage = storage;
+        this.display = display;
+        
     }
 
     public int getImei(){
@@ -19,11 +22,7 @@ public class Smartphone extends Prodotto{
         return this.storage;
     }
 
-    public void setImei(int imei){
-        this.imei = imei;
-    }
-
-    public void setStorage(int storage){
-        this.storage = storage;
+    public Display getDisplay(){
+        return this.display;
     }
 }

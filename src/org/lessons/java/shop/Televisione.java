@@ -9,6 +9,8 @@ public class Televisione extends Prodotto{
         this.display = display;
     }
 
-
+    public Display getDisplay(){
+        return this.display;
+    }
     
 }

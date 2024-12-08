@@ -2,17 +2,17 @@ package org.lessons.java.shop;
 
 public class Televisione extends Prodotto{
 
-    private boolean isSMart;
+    private boolean isSmart;
     private int inches;
 
     public Televisione(String name, String brand, int price, int iva, boolean isSmart, int inches){
         super(name, brand, price, iva);
-        this.isSMart = isSmart;
+        this.isSmart = isSmart;
         this.inches = inches;
     }
 
     public boolean getIsSmart(){
-        return this.isSMart;
+        return this.isSmart;
     }
 
     public int getInches(){
@@ -20,7 +20,7 @@ public class Televisione extends Prodotto{
     }
 
     public void setIsSmart(boolean isSmart){
-        this.isSMart = isSmart;
+        this.isSmart = isSmart;
     }
 
     public void setInches(int inches){

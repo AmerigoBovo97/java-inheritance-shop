@@ -1,4 +1,4 @@
-    package org.lessons.java.shop;
+package org.lessons.java.shop;
 
 import java.util.Random;
 
@@ -16,13 +16,8 @@ public class Prodotto {
         this.brand = brand;
         this.price = price;
         this.iva = iva;
-        this.productCode = this.randomCodeGenerator();
-    }
-
-    private int randomCodeGenerator() {
         Random generator = new Random();
-        int codiceRandom = generator.nextInt(10000);
-        return codiceRandom;
+        this.productCode = generator.nextInt(10000);
     }
 
     public int getProduct(){
